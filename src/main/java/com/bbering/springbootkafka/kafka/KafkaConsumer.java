@@ -12,7 +12,7 @@ public class KafkaConsumer {
 
   @KafkaListener(topics = "myTopic", groupId = "myGroup")
   public void consume(String message) {
-    LOGGER.info(String.format("Mensagem recebida: ", message));
+    LOGGER.info(String.format("Mensagem recebida: %s", message));
   }
 
 }
